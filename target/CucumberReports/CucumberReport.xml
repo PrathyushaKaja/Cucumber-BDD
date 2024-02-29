@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.639" tests="9" skipped="0" failures="0" errors="0">
+<testcase classname="Login Functionality" name="Login with valid credentials - Example #1.1" time="0.059">
+<system-out><![CDATA[
+Given user navigates to Login page..........................................passed
+When user enters valid username saiprathyusha.kaja@yexle.com................passed
+And enters valid password Prashya@2000......................................passed
+And clicks on submit button.................................................passed
+Then user should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login with valid credentials - Example #1.2" time="0.019">
+<system-out><![CDATA[
+Given user navigates to Login page..........................................passed
+When user enters valid username prathyushakaja30@gmail.com..................passed
+And enters valid password Sai@2000..........................................passed
+And clicks on submit button.................................................passed
+Then user should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login with valid credentials - Example #1.3" time="0.011">
+<system-out><![CDATA[
+Given user navigates to Login page..........................................passed
+When user enters valid username ksprathyusha2000@gmail.com..................passed
+And enters valid password Sai@2000..........................................passed
+And clicks on submit button.................................................passed
+Then user should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login with invalid credentials" time="0.012">
+<system-out><![CDATA[
+Given user navigates to Login page..........................................passed
+When user enters invalid username "p@yexle.com".............................passed
+And enters invalid password "P@2000"........................................passed
+And clicks on submit button.................................................passed
+Then user should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register Account" name="Creating an account by giving the details" time="0.022">
+<system-out><![CDATA[
+Given user navigates to register page.......................................passed
+When user enters details in the below fields................................passed
+And clicks on Privacy Policy field..........................................passed
+Then clicks on Continue button..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register Account" name="Creating an account by giving all the details" time="0.007">
+<system-out><![CDATA[
+Given user navigates to register page.......................................passed
+When user enters details in the below fields................................passed
+* selects Yes option for the Subscribe field................................passed
+* clicks on Privacy Policy field............................................passed
+Then clicks on Continue button..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Search for a valid product" time="0.009">
+<system-out><![CDATA[
+Given user opens the application............................................passed
+When user enters valid product into search field............................passed
+And user clicks on search button............................................passed
+Then valid product should be displayed in search results....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Search for a non-existing product" time="0.005">
+<system-out><![CDATA[
+Given user opens the application............................................passed
+When user enters non-existing product into search field.....................passed
+And user clicks on search button............................................passed
+Then proper text informing the user about no product matching should be displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Search without providing any product" time="0.007">
+<system-out><![CDATA[
+Given user opens the application............................................passed
+When user don't enter any product into search field.........................passed
+And user clicks on search button............................................passed
+Then proper text informing the user about no product matching should be displayed.passed
+]]></system-out>
+</testcase>
+</testsuite>
